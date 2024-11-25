@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      p{
+        background-color: green;
+        color: white;
+        font-size: 18px;
+      }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methods for Adding CSS</title>
+    
   </head>
+    
   <body>
     <div>Style me via the external method!</div>
     <p>I would like to be styled with the internal method, please.</p>
-    <button>Inline Method</button>
+    <button style="background-color: orange; font-size: 18px; border-color: black;"></style>Inline Method</button>
   </body>
 </html>
+
+
+
+<ol><strong>Solutions:</strong>
+  <li>"div" external method</li>
+  <ol>
+    <li>create styles.css giving instructions</li>
+    <li>instructions on css file: red background, white text, 32px font size, center align, bold text</li>
+    <li>create <link> element to link styles.css in <head> section
+    </li>
+  </ol>
+
+<li>"p" internal method</li>
+  <ol>
+    <li>underneath 'head' section create 'style' tag</li>
+    <li>underneath 'style' tag, write desired instructions for 'p' type selector</li>
+    <li>do not use link because no outside link is needed like external method</li>
+    <li>instructions: green background, white text, font size 18px</li>
+  </ol>
+<li>"button" inline method</li>
+  <ol>
+    <li>before closing first bracket of 'button'</li>
+    <li>create 'style' tag</li>
+    <li>list orange background, font size 18px instructions, add black border-color</li>
+    <li>close 'button' bracket</li>
+    <li>message: Inline Method between brackets</li>
+    <li>close '/button' bracket</li>
+  </ol>
+</ol>
